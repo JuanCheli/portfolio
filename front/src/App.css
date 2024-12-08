@@ -2,64 +2,56 @@
 
 .navbar {
     height: 100%;
-    width: 250px;
+    width: 244px;
     position: fixed;
     border-right: 1px solid #222222;
     display: flex;
     flex-direction: column;
-    transition: width 0.3s ease-in-out; /* Transición suave al cambiar el ancho */
+    transition: width 0.3s ease-in-out;
 }
 
 /* PRINCIPAL BAR */
 
 .principal-bar {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
-    gap: 15px;
-    width: 100%;
 }
 
 .principal-bar li {
-    margin-left: -20px;
-    width: 100%;
+    margin-left: -15px;
+    width: 85%;
+    height: 55px;
 }
 
+
 .principal-bar .icon {
-    width: 30px;
-    height: 30px;
+    width: 27px;
+    height: 27px;
     align-items: left;
     margin-right: 10px;
-    margin-bottom: -10px;
+    margin-bottom: -3px;
     transition: all 0.3s ease-in-out; /* Transición en tamaño y posición */
 }
 
 .principal-bar .main-li {
     margin-bottom: 50px;
+    width: 100%;
 }
 
 .principal-bar .icon.main-icon {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     margin-bottom: -20px;
-    transition: width 0.3s ease-in-out, height 0.3s ease-in-out; /* Suaviza cambios de tamaño */
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
-.principal-bar .main-span {
-    font-size: 23px;
-    font-weight: bold;
-    margin-left: 10px;
-    text-align: left;
-    transition: opacity 0.3s ease-in-out;
-}
 
 .principal-bar .icon.search-icon {
     margin-left: -7px;
-    margin-top: 15px;
 }
 
 .principal-bar .icon.heart-icon {
     margin-left: -6px;
-    margin-top: 17px;
 }
 
 
@@ -70,15 +62,22 @@
 
 
 .principal-bar button {
-    width: 25px;
     background-color: transparent;
     border: none;
     outline: none;
     cursor: pointer;
-    text-decoration: none;
     font-size: 17px;
     display: flex;
     transition: all 0.3s ease-in-out;
+}
+
+.principal-bar li a,
+.principal-bar li button {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  height: 100%; 
+  text-decoration: none;
 }
 
 /* SECONDARY BAR */
@@ -88,52 +87,85 @@
     flex-direction: column;
     margin-top: auto;
     padding-bottom: 10px;
-    gap: 15px;
+    gap: 5px;
 }
 
+
 .secondary-bar li {
-    justify-content: center;
-    margin-left: -10px;
+    margin-left: 0;
+    width: 40px; 
+    height: 40px; 
+    display: flex;
+    transition: all 0.3s ease-in-out;
 }
 
 .secondary-bar .icon {
-    width: 30px;
-    height: 30px;
-    margin-top: 10px;
-    transition: all 0.3s ease-in-out; /* Suaviza cambios en íconos secundarios */
+    margin-top: 7px;
+    transition: all 0.3s ease-in-out; 
 }
 
 .secondary-bar .icon.linkedin-icon {
     width: 25px;
     height: 25px;
     margin-bottom: -5px;
+    margin-left: -5px;
 }
 
 .secondary-bar .icon.github-icon {
-    width: 35px;
-    height: 35px;
+    width: 34px;
+    height: 34px;
     margin-bottom: -10px;
-    margin-left: -5px;
+    margin-left: -10px;
 }
 
 .principal-bar span,
 .secondary-bar span {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: bold;
     font-family: system-ui;
     color: #fff;
     text-decoration: none;
     display: inline-flex;
     margin-left: 20px;
-    margin-top: 20px;
-    justify-content: center; 
-    align-items: center; 
 }
+
+.principal-bar .main-span {
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom:-20px;
+    text-align: left;
+}
+
+
+.principal-bar li.item:not(.main-li),
+.secondary-bar li {
+    padding: 10px 15px; 
+    border-radius: 8px; 
+    transition: all 0.3s ease-in-out; 
+    margin-left: -20px;
+    width: 90%;
+}
+
+/* Hover Effect for Navbar Options */
+.principal-bar li:not(.main-li):hover,
+.secondary-bar li:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px; 
+    cursor: pointer; 
+    width: 87%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.principal-bar li:not(.main-li):hover {
+    width: 100%;
+}
+
 
 /* Responsive Nav */
 @media (max-width: 1264px) {
     .navbar {
-        width: 100px;
+        width: 72px;
         transition: width 0.3s ease-in-out;
     }
 
@@ -142,45 +174,42 @@
         display: none;
     }
 
-    .principal-bar .icon,
-    .secondary-bar .icon {
-        display: inline-block;
-        margin-left: 10px;
+    .principal-bar li{
+        margin-left: -17px;
     }
 
-    .principal-bar .proyect-icon,
-    .principal-bar .video-icon {
-        margin-bottom: 5px;
+    .secondary-bar li {
+        padding: 0px;
+        margin-left: -10px;
     }
-
     .principal-bar .icon.main-icon {
-        margin-left: 0px;
-    }
-
-    .principal-bar .icon.search-icon {
-        margin-left: 3px;
-        margin-top: 8px;
-        margin-bottom:2px;
-    }
-
-    .principal-bar .icon.heart-icon {
-        margin-left: 3px;
-        margin-bottom:3px;
-    }
-
-    .principal-bar .icon.pfp {
-        margin-left: 9px;
+        margin-left: -5px;
+        width: 40px;
+        height: 40px;
     }
 
     .secondary-bar .icon.linkedin-icon {
-        margin-left: 0px;
+        margin-left: -5px;
+        margin-top: 10px;
     }
+
+    .secondary-bar .icon.github-icon {
+        margin-left: -10px;
+        margin-top: 5px;
+    }
+
+    /* Hover Effect for Mobile */
+    .principal-bar li:not(.main-li):hover,
+    .secondary-bar li:hover {
+        padding: 0px 15px;
+        margin-left: -32px;
+    }
+    .secondary-bar li:hover{
+        width: 15px;
+        height: 40px;
+        margin-left: -25px;
+    }
+
 }
 
 
-@media (min-width: 1265px) {
-    .navbar {
-        width: 250px; 
-        transition: none; 
-    }
-}

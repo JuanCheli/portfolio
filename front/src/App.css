@@ -86,7 +86,6 @@
     flex-direction: column;
     margin-top: auto;
     padding-bottom: 10px;
-    gap: 5px;
 }
 
 
@@ -108,6 +107,8 @@
     height: 25px;
     margin-bottom: -10px;
     margin-left: -5px;
+    position: relative;
+    top: -3px;
 }
 
 .secondary-bar .icon.github-icon {
@@ -115,6 +116,8 @@
     height: 34px;
     margin-bottom: -20px;
     margin-left: -10px;
+    position: relative;
+    top: -8px;
 }
 
 
@@ -177,6 +180,10 @@
         margin-left: -17px;
     }
 
+    .secondary-bar {
+        gap: 30px;
+    }
+
     .secondary-bar li {
         padding: 0px;
         margin-left: -10px;
@@ -195,6 +202,7 @@
     .secondary-bar .icon.github-icon {
         margin-left: -10px;
         margin-top: 5px;
+        top: 0px;
     }
 
     /* Hover Effect for Mobile */
@@ -207,6 +215,7 @@
         width: 15px;
         height: 40px;
         margin-left: -25px;
+        margin-bottom: -10px;
     }
 
 }

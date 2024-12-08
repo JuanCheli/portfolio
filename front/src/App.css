@@ -15,12 +15,12 @@
 .principal-bar {
     display: inline-flex;
     flex-direction: column;
+    gap: 5px;
 }
 
 .principal-bar li {
     margin-left: -15px;
-    width: 85%;
-    height: 55px;
+    height: 50px;
 }
 
 
@@ -28,7 +28,7 @@
     width: 27px;
     height: 27px;
     align-items: left;
-    margin-right: 10px;
+    
     margin-bottom: -3px;
     transition: all 0.3s ease-in-out; /* Transición en tamaño y posición */
 }
@@ -75,7 +75,6 @@
 .principal-bar li button {
   display: flex;
   align-items: center;
-  width: 85%;
   height: 100%; 
   text-decoration: none;
 }
@@ -94,7 +93,7 @@
 .secondary-bar li {
     margin-left: 0;
     width: 40px; 
-    height: 40px; 
+    height: 30px; 
     display: flex;
     transition: all 0.3s ease-in-out;
 }
@@ -107,21 +106,21 @@
 .secondary-bar .icon.linkedin-icon {
     width: 25px;
     height: 25px;
-    margin-bottom: -5px;
+    margin-bottom: -10px;
     margin-left: -5px;
 }
 
 .secondary-bar .icon.github-icon {
     width: 34px;
     height: 34px;
-    margin-bottom: -10px;
+    margin-bottom: -20px;
     margin-left: -10px;
 }
+
 
 .principal-bar span,
 .secondary-bar span {
     font-size: 15px;
-    font-weight: bold;
     font-family: system-ui;
     color: #fff;
     text-decoration: none;
@@ -144,7 +143,7 @@
     border-radius: 8px; 
     transition: all 0.3s ease-in-out; 
     margin-left: -20px;
-    width: 90%;
+    width: 100%;
 }
 
 /* Hover Effect for Navbar Options */

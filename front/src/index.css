@@ -2,3 +2,22 @@ body {
   margin: 0 auto;
   background-color: #000;
 }
+
+.layout {
+  display: flex;
+}
+
+.navbar {
+  width: 244px;
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+}
+
+.home {
+  flex: 1;
+  padding: 20px;
+  margin-left: 244px; 
+  overflow-y: auto;
+}

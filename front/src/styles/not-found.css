@@ -1,0 +1,23 @@
+.not-found {
+    color: #fff;
+    text-align: center;
+    font-family: system-ui;
+    padding: 20px;
+    margin-left: 200px;
+}
+
+.not-found-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+.not-found-span {
+    position: relative;
+    top: 12px;
+}
+
+.not-found-span a {
+    text-decoration: none;
+    color: #fff;
+}

@@ -7,7 +7,6 @@ export function Menu() {
       <ul className="principal-bar">
         <li className="main-li">
           <NavLink exact to="/">
-            
             <img
               className="icon main-icon"
               src="\src\media\icon.png"
@@ -44,7 +43,11 @@ export function Menu() {
         </li>
         <li>
           <NavLink exact to="/video">
-            <img className="icon video-icon" src="\src\media\reel.png" alt="Reels"></img>
+            <img
+              className="icon video-icon"
+              src="\src\media\reel.png"
+              alt="Reels"
+            ></img>
             <span>Presentación</span>
           </NavLink>
         </li>
@@ -53,15 +56,18 @@ export function Menu() {
             <img
               className="icon"
               src="\src\media\messenger.png"
-              alt="Messages">
-
-              </img>
+              alt="Messages"
+            ></img>
             <span>Contacto</span>
           </NavLink>
         </li>
         <li>
           <button>
-            <img className="icon heart-icon" src="\src\media\heart.png" alt="Heart"></img>
+            <img
+              className="icon heart-icon"
+              src="\src\media\heart.png"
+              alt="Heart"
+            ></img>
             <span className="interest-span">Intereses</span>
           </button>
         </li>
@@ -79,13 +85,21 @@ export function Menu() {
       <ul className="secondary-bar">
         <li>
           <a href="https://www.linkedin.com/in/juancheli/" target="_blank">
-            <img className="icon linkedin-icon" src="\src\media\linkedin.png" alt="linkedin icon"></img>
+            <img
+              className="icon linkedin-icon"
+              src="\src\media\linkedin.png"
+              alt="linkedin icon"
+            ></img>
             <span>LinkedIn</span>
           </a>
         </li>
         <li>
-          <a href="https://github.com/JuanCheli"target="_blank">
-            <img  className="icon github-icon" src="\src\media\github.png" alt="github icon"></img>
+          <a href="https://github.com/JuanCheli" target="_blank">
+            <img
+              className="icon github-icon"
+              src="\src\media\github.png"
+              alt="github icon"
+            ></img>
             <span>GitHub</span>
           </a>
         </li>

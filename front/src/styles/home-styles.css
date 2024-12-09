@@ -1,88 +1,193 @@
 .home {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    gap: 20px;
-    height: 100vh;
-    overflow-y: auto;
-  }
-  
-  .stories-container {
-    flex: 1;
-    max-width: 250px;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .stories {
-    display: flex;
-    gap: 10px;
-    overflow-x: scroll;
-  }
-  
-  .story {
-    min-width: 60px;
-    height: 60px;
-    background-color: #ddd;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    color: #555;
-  }
-  
+  display: flex;
+  height: 100vh;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Contenedor principal (stories + posts) */
+.main-content {
+  flex: 3; /* Más espacio para contenido principal */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Stories y posts tienen el mismo ancho */
+.stories-container {
+  border: 1px solid #222222;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: -10px;
+  margin-left: 277px;
+  width: 65%; /* Asegura el mismo ancho */
+}
+
+.stories {
+  display: flex;
+  gap: 15px;
+}
+
+.story {
+  min-width: 65px;
+  height: 65px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* Posts ocupan el mismo ancho que stories */
+.posts-container {
+  border: 1px solid #222222;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 320px;
+  width: 50%; /* Mismo ancho que stories */
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post {
+  border: 1px solid #222222;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+}
+
+
+/* Aside al lado derecho, ocupando toda la altura */
+.aside-container {
+  flex: 1; /* Menor proporción */
+  max-width: 350px;
+  padding: 10px;
+  margin-right: 255px;
+  border-radius: 10px;
+  height: calc(100vh - 400px); /* Altura total menos padding de .home */
+  position:sticky; /* Fijo mientras se hace scroll */
+  top: 5px;
+  color: #fff;
+  font-family: system-ui;
+}
+
+.profile-summary {
+  max-height: 6%;
+}
+
+.aside-pfp {
+  max-width: 45px;
+  border-radius: 50%;
+}
+
+.aside-container span {
+  display:flex;
+  position: relative;
+  bottom: 40px;
+  left:55px;
+  font-size: 13px;
+  width: 60px;
+}
+
+.aside-username {
+  font-weight: bold;
+  margin-left:2px;
+}
+
+.aside-name {
+  color: #777;
+  margin-left: 1px;
+}
+
+.aside-container a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.suggestions {
+  margin-top: 35px;
+}
+
+.suggestions .suggestions-all {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 230px;
+  margin-top: -39px;
+  display: flex;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: system-ui;
+  font-weight: bold;
+}
+
+.suggestions .suggestions-all:hover {
+  color: #777;
+}
+
+.suggestions-for-you {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #777;
+}
+
+.suggestions-footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 34px;
+  width:270px;
+  font-size: 12px;
+  color: #777;
+}
+
+.suggestions-footer ul {
+  display: flex; /* Configura el contenedor como flexbox */
+  flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente fila */
+  gap: 3px; /* Espacio entre elementos */
+  list-style: none; /* Quita los puntos de la lista */
+  padding: 0;
+  margin: 0;
+  justify-content: flex-start; /* Alinea los elementos a la izquierda */
+  margin-bottom: 7px;
+}
+
+.suggestions-footer ul li {
+  display: inline; /* Asegura que los elementos se comporten como en línea */
+  white-space: nowrap; /* Previene el quiebre del texto dentro de cada `li` */
+  font-size: 12px; /* Ajusta el tamaño del texto */
+}
+
+
+
+/* Responsive: mueve main-content hacia la izquierda */
+@media (max-width: 1800px) {
+  .main-content,
+  .stories-container,
   .posts-container {
-    flex: 2;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 50px; /* Se alinea completamente a la izquierda */
   }
-  
-  .posts {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .post {
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  }
-  
+
   .aside-container {
-    flex: 1;
-    max-width: 250px;
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0.8; /* Menor visibilidad */
   }
-  
-  .profile-summary {
-    margin-bottom: 20px;
-    text-align: center;
+}
+
+@media (max-width: 1160px) {
+  .main-content,
+  .stories-container,
+  .posts-container {
+    margin-left: 0; /* Se alinea completamente a la izquierda */
   }
-  
-  .suggestions {
-    background-color: #f1f1f1;
-    padding: 10px;
-    border-radius: 8px;
+
+  .aside-container {
+    display: none; /* Desaparece el aside */
   }
-  
-  @media (max-width: 768px) {
-    .home {
-      flex-direction: column;
-    }
-  
-    .stories-container,
-    .posts-container,
-    .aside-container {
-      max-width: 100%;
-    }
-  }
+}

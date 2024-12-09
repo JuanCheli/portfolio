@@ -29,8 +29,6 @@
     width: 25px;
     height: 25px;
     align-items: left;
-    
-    margin-bottom: -3px;
     transition: all 0.3s ease-in-out; /* Transición en tamaño y posición */
 }
 
@@ -42,7 +40,7 @@
 .principal-bar .icon.main-icon {
     width: 55px;
     height: 55px;
-    margin-bottom: -20px;
+    margin-bottom: -25px;
     transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
@@ -128,7 +126,7 @@
     color: #fff;
     text-decoration: none;
     display: inline-flex;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 .principal-bar .main-span {

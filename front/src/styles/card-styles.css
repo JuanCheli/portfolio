@@ -37,7 +37,7 @@
     border-radius: 999px;
     padding: 6px 20px;
     font-weight: bold;
-
+    transition: .3s ease all;
 }
 
 .tw-follow-button-container button span {
@@ -54,6 +54,8 @@
     display:flex;
     justify-content: center;
     left: 5px;
+    padding: 6px 30px;
+    transition: .3s ease all;
 }
 
 .tw-followCard-followButton:hover {
@@ -71,7 +73,7 @@
 }
 
 .tw-followCard-followButton.is-following:hover::before {
-    content: "Unfollow";
+    content: "Dejar de seguir";
     overflow: hidden;
     display: block;
     position: absolute;

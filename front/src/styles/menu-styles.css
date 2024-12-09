@@ -11,6 +11,10 @@
     margin-right: 100px;
 }
 
+.navbar a.active {
+    font-weight: 900;
+}
+
 /* PRINCIPAL BAR */
 
 .principal-bar {
@@ -94,6 +98,12 @@
     height: 30px; 
     display: flex;
 
+}
+
+.secondary-bar li a {
+    width: 100%;
+    height:100%;
+    
 }
 
 .secondary-bar .icon {

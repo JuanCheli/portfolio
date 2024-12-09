@@ -61,7 +61,7 @@ export function Home() {
             <li>Condiciones ·</li>
             <li>Ubicaciones ·</li>
             <li>Idioma ·</li>
-            <li>Meta Verified</li>
+            <li>Cheli Verified</li>
           </ul>
           <p>© 2025 JUAN CHELI</p>
         </div>

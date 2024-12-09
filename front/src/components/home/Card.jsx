@@ -6,16 +6,23 @@ export function Card({
   name = "unknown",
   initialIsFollowing = false,
 }) {
-  const [isFollowing, setIsFollowing] = useState(initialIsFollowing);
+  const storageKey = `follow_${name}`;
+  const [isFollowing, setIsFollowing] = useState(() => {
+    const savedState = localStorage.getItem(storageKey);
+    return savedState ? JSON.parse(savedState) : initialIsFollowing;
+  });
 
-  const text = isFollowing ? "Following" : "Follow";
+  const text = isFollowing ? "Siguiendo" : "Seguir";
   const buttonClassName = isFollowing
     ? "tw-followCard-followButton is-following"
     : "tw-followCard-followButton";
   const imgSrc = `\\src\\media\\${source}.png`
 
+
   const handleClick = () => {
-    setIsFollowing(!isFollowing);
+    const newState = !isFollowing;
+    setIsFollowing(newState);
+    localStorage.setItem(storageKey, JSON.stringify(newState));
   };
 
   return (

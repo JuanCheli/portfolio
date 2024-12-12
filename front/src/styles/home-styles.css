@@ -73,7 +73,6 @@
   position:sticky; /* Fijo mientras se hace scroll */
   top: 5px;
   color: #fff;
-  font-family: system-ui;
 }
 
 .profile-summary {
@@ -110,7 +109,7 @@
 }
 
 .suggestions {
-  margin-top: 33px;
+  margin-top: 35px;
 }
 
 .suggestions .suggestions-all {
@@ -121,11 +120,10 @@
   color: #fff;
   text-decoration: none;
   margin-left: 230px;
-  margin-top: -37px;
+  margin-top: -34px;
   display: flex;
   cursor: pointer;
-  font-size: 12px;
-  font-family: system-ui;
+  font-size: 0.73rem;
   font-weight: bold;
 }
 
@@ -134,7 +132,7 @@
 }
 
 .suggestions-for-you {
-  font-size: 14.5px;
+  font-size: 14px;
   font-weight: 700;
   color: #777;
 }

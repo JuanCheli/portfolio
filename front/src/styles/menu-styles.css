@@ -132,7 +132,6 @@
 .principal-bar span,
 .secondary-bar span {
     font-size: 15px;
-    font-family: system-ui;
     color: #fff;
     text-decoration: none;
     display: inline-flex;

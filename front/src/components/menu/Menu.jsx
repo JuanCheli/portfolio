@@ -12,7 +12,7 @@ export function Menu() {
               src="\src\media\icon.png"
               alt="Coding icon </>"
             ></img>
-            <span className="main-span">MyPortfolio</span>
+            <span className="main-span">Cheli&apos;s Portfolio</span>
           </NavLink>
         </li>
         <li>

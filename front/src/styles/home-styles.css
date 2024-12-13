@@ -112,7 +112,7 @@
   margin-top: 35px;
 }
 
-.suggestions .suggestions-all {
+.suggestions-all {
   border: none;
   border-radius: 5px;
   padding: 5px 10px;
@@ -120,11 +120,12 @@
   color: #fff;
   text-decoration: none;
   margin-left: 230px;
-  margin-top: -34px;
+  margin-top: -33px;
   display: flex;
   cursor: pointer;
   font-size: 0.73rem;
   font-weight: bold;
+  width: 70px;
 }
 
 .suggestions .suggestions-all:hover {
@@ -140,7 +141,7 @@
 .suggestions-footer {
   display: flex;
   flex-direction: column;
-  margin-top: 34px;
+  margin-top: 33px;
   width:270px;
   font-size: 12px;
   color: #777;

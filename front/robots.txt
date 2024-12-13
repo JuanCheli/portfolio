@@ -1,0 +1,19 @@
+# Archivo robots.txt para el portafolio interactivo
+# Permite el acceso a todos los rastreadores y define la ubicación del mapa del sitio
+
+User-agent: *
+Allow: /
+
+# Bloquea el acceso a directorios sensibles o irrelevantes para SEO
+Disallow: /admin/
+Disallow: /config/
+Disallow: /node_modules/
+Disallow: /temp/
+
+# Bloquea rastreo de archivos específicos, como de configuración o temporales
+Disallow: /*.json$
+Disallow: /*.log$
+Disallow: /*.tmp$
+
+# Especifica la ubicación del mapa del sitio (asegúrate de tener un sitemap.xml generado)
+Sitemap: https://www.tusitio.com/sitemap.xml

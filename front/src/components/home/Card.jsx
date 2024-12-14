@@ -16,7 +16,7 @@ export function Card({
   const buttonClassName = isFollowing
     ? "tw-followCard-followButton is-following"
     : "tw-followCard-followButton";
-  const imgSrc = `\\src\\media\\${source}.png`
+  const imgSrc = `\\src\\media\\${source}.svg`
 
 
   const handleClick = () => {

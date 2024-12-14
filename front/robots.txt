@@ -15,5 +15,4 @@ Disallow: /*.json$
 Disallow: /*.log$
 Disallow: /*.tmp$
 
-# Especifica la ubicación del mapa del sitio (asegúrate de tener un sitemap.xml generado)
-Sitemap: https://www.tusitio.com/sitemap.xml
+

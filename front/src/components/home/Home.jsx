@@ -1,6 +1,7 @@
 import "../../styles/home-styles.css";
 
 import {Aside} from './Aside.jsx'
+import {Story} from './Story.jsx'
 
 export function Home() {
   return (
@@ -10,8 +11,8 @@ export function Home() {
         {/* Stories */}
         <div className="stories-container">
           <div className="stories">
-            <div className="story">Story 1</div>
-            <div className="story">Story 2</div>
+            <Story name="CV Español" source="../../media/curriculum.svg"/>
+            <Story name="CV English" source="../../media/curriculum.svg"/>
             <div className="story">Story 3</div>
             <div className="story">Story 4</div>
           </div>

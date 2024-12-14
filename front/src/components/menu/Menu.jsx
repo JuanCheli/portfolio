@@ -9,7 +9,7 @@ export function Menu() {
           <NavLink exact to="/">
             <img
               className="icon main-icon"
-              src="\src\media\icon.png"
+              src="\src\media\icon.svg"
               alt="Coding icon </>"
             ></img>
             <span className="main-span">Cheli&apos;s Portfolio</span>
@@ -17,7 +17,7 @@ export function Menu() {
         </li>
         <li>
           <NavLink exact to="/">
-            <img className="icon" src="\src\media\home.png" alt="Home"></img>
+            <img className="icon home-icon" src="\src\media\home.svg" alt="Home"></img>
             <span>Inicio</span>
           </NavLink>
         </li>
@@ -25,7 +25,7 @@ export function Menu() {
           <button>
             <img
               className="icon search-icon"
-              src="\src\media\search.png"
+              src="\src\media\search.svg"
               alt="search"
             ></img>
             <span>Tecnologias</span>
@@ -35,7 +35,7 @@ export function Menu() {
           <NavLink exact to="/explore">
             <img
               className="icon proyect-icon"
-              src="\src\media\explore.png"
+              src="\src\media\explore.svg"
               alt="Explore"
             ></img>
             <span>Proyectos</span>
@@ -45,7 +45,7 @@ export function Menu() {
           <NavLink exact to="/video">
             <img
               className="icon video-icon"
-              src="\src\media\reel.png"
+              src="\src\media\reel.svg"
               alt="Reels"
             ></img>
             <span>Presentación</span>
@@ -54,8 +54,8 @@ export function Menu() {
         <li>
           <NavLink exact to="/contact">
             <img
-              className="icon"
-              src="\src\media\messenger.png"
+              className="icon msg-icon"
+              src="\src\media\messenger.svg"
               alt="Messages"
             ></img>
             <span>Contacto</span>
@@ -65,7 +65,7 @@ export function Menu() {
           <button>
             <img
               className="icon heart-icon"
-              src="\src\media\heart.png"
+              src="\src\media\heart.svg"
               alt="Heart"
             ></img>
             <span className="interest-span">Intereses</span>
@@ -87,7 +87,7 @@ export function Menu() {
           <a href="https://www.linkedin.com/in/juancheli/" target="_blank">
             <img
               className="icon linkedin-icon"
-              src="\src\media\linkedin.png"
+              src="\src\media\linkedin.svg"
               alt="linkedin icon"
             ></img>
             <span>LinkedIn</span>
@@ -97,10 +97,10 @@ export function Menu() {
           <a href="https://github.com/JuanCheli" target="_blank">
             <img
               className="icon github-icon"
-              src="\src\media\github.png"
+              src="\src\media\github.svg"
               alt="github icon"
             ></img>
-            <span>GitHub</span>
+            <span className="git-text">GitHub</span>
           </a>
         </li>
       </ul>
